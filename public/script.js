@@ -95,13 +95,13 @@ $(function () {
     $("#stop_video").click(function(){
         const enabled = mystream.getVideoTracks()[0].enabled;
         if(enabled){
-            mystream.getVideoTracks()[0].enabled = false;
+            myStream.getVideoTracks()[0].enabled = false;
             html = '<i class = "fas fa-video-slash"></i>'
             $("#stop_video").toggleClass("background_red");
             $("#stop_video").html(html)
         }
         else{
-            mystream.getVideoTracks()[0].enabled = true;
+            myStream.getVideoTracks()[0].enabled = true;
             html = '<i class = "fas fa-video"></i>'
             $("#stop_video").toggleClass("background_red");
             $("#stop_video").html(html)
